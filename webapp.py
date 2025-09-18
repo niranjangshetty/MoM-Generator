@@ -46,7 +46,7 @@ if st.button('Generate MoM'):
             Heading : Meeting Agenda
             Subheading : Name of Attendees(Keep it None if this is not provided)
             Subheading : Date of Meeting and venue of meeting()
-            Body : The body must follow follwing sequence of points
+            Body : The body must follow following sequence of points
             * Key points discussed
             * Highligh any Decision that has been finalised.
             * Mention Actionable items.
