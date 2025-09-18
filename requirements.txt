@@ -3,4 +3,4 @@ google.generativeai
 pypdf
 opencv-python-headless
 python-docx
-pillow
+Pillow
