@@ -7,7 +7,7 @@ from imageExtractor import extract_text_image
 
 
 #configure the model
-key = os.getenv('GOOGE_API_KEY')
+key = os.getenv('GOOGLE_API_KEY')
 genai.configure(api_key=key)
 model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
