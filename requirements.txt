@@ -1,0 +1,6 @@
+streamlit
+google.generativeai
+pypdf
+opencv-python
+python-docx
+pillow
