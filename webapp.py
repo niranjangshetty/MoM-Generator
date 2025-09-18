@@ -20,7 +20,7 @@ if user_file:
         user_text = text_extractor_pdf(user_file)
     elif user_file.type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
         user_text = text_extractor_docx(user_file)
-    elif user_file.type in ['image/jpeg', 'image/png']:
+    elif user_file.type in ['image/jpg', 'image/jpeg', 'image/png']:
         user_text = extract_text_image(user_file)
     else:
         st.sidebar.error('Upload Correct file format')
@@ -46,7 +46,7 @@ if st.button('Generate MoM'):
             Heading : Meeting Agenda
             Subheading : Name of Attendees(Keep it None if this is not provided)
             Subheading : Date of Meeting and venue of meeting()
-            Body : The body must follow following sequence of points
+            Body : The body must follow follwing sequence of points
             * Key points discussed
             * Highligh any Decision that has been finalised.
             * Mention Actionable items.
