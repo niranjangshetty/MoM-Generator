@@ -20,7 +20,7 @@ if user_file:
         user_text = text_extractor_pdf(user_file)
     elif user_file.type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
         user_text = text_extractor_docx(user_file)
-    elif user_file.type in ['image/jpg', 'image/jpeg', 'image/png']:
+    elif user_file.type in ['image/jpeg', 'image/png']:
         user_text = extract_text_image(user_file)
     else:
         st.sidebar.error('Upload Correct file format')
